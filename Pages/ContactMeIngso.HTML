@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Contact Me</title>
+    <link rel="stylesheet" href="../Css/portfolio.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .imgbd {
+            padding-top: 103px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .c1,
+        .c2 {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .c3 {
+            color: crimson;
+            font-size: 15px;
+            width: 150%;
+            padding: 5px 5px;
+        }
+
+        .form input {
+            padding-right: 48%;
+            color: crimson;
+            border: 1px solid darkcyan;
+            border-radius: 10px;
+        }
+
+        .form button {
+            border-radius: 20%;
+            font-size: 19px;
+            color: beige;
+            background-color: gray;
+            border: 1px solid brown;
+            margin: 10px 5px;
+            padding: 10px;
+            transition: 0.2s;
+        }
+
+        .form button:hover {
+            background-color: green;
+            text-decoration: underline;
+        }
+
+        .image {
+            background: rgba(1, 1, 1, 0.2) url(../Images/Portfolio/ContactME/img.jpg);
+            background-blend-mode: darken;
+            background-size: cover;
+            padding-bottom: 75px;
+        }
+
+        .images {
+            width: 28%;
+            padding-left: 15%;
+        }
+
+        .images1 {
+            padding-left: 9%;
+            width: 27%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <nav>
+            <ul>
+                <li><i style="font-size: 28px;" class="fa-solid fa-house"></i><a href="PortfolioIngso.HTML">Home</a></li>
+                <li><a href="ContactMeIngso.HTML">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <Div class="whole image">
+        <div class="imgbd">
+            <form onsubmit="return anjil()" class="form">
+                <input id="Email" class="c1" type="text" placeholder="Email Here" required></br>
+                <input id="fname" class="c2" type="text" placeholder="First Name Here"></br>
+                <input id="lname" class="c2" type="text" placeholder=" Last Name Here"></br>
+                <textarea id="message" class="c3" rows="5" placeholder="Message Here"></textarea>
+                <br>
+                <button>Submit</button>
+            </form>
+            <img src="../Images/Portfolio/ContactME/Mobile.svg" alt="image" class="images">
+        </div>
+    </Div>
+
+    <footer style="Padding:10px" class="foot">
+        &copy;Portfolio, 2023
+        <div class="down">
+            <h4>Quick Links:</H4>
+            <p><a href="PortfolioIngso.HTML">Home</a>
+                <a href="ContactMeIngso.HTML">Contact Me</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function anjil() {
+            var email = document.getElementById('Email');
+            var fname = document.getElementById('fname');
+            var lname = document.getElementById('lname');
+            var message = document.getElementById('Message');
+            if (email.value == "" || fname.value == "" || lname.value == "" ||
+                message.value == "") {
+                alert("Something is missing, Form is not validated")
+
+            } else {
+                alert("Form is validated,Your details has been Submitted")
+            }
+        }
+    </script>
+</body>
+
+</html>

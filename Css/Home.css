@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans Ms", Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#container {
+    background-image: url(../Images/Home/back.png);
+    background-size: cover;
+    background-repeat: none;
+    padding-bottom: 610px;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+}
+
+#main h1 {
+    font-family: "Hansel Rough", Arial, Helvetica, sans-serif;
+    display: inline;
+    font-size: 45px;
+    animation: 4s clr;
+    animation-iteration-count: infinite;
+    transition: 0.9s all;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes clr {
+    0% {
+        color: black;
+    }
+
+    25% {
+        color: cyan;
+    }
+
+    50% {
+        color: mediumseagreen;
+    }
+
+    75% {
+        color: gray;
+    }
+
+    100% {
+        color: sandybrown;
+    }
+
+}
+
+.nav {
+    display: flex;
+    background-color: darkgreen;
+    justify-content: space-evenly;
+}
+
+.nav ul {
+    position: sticky;
+    display: inline-block;
+    width: 100%;
+    background-color: darkgreen;
+}
+
+.nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.nav ul li a {
+    display: inline-block;
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+    transition: .4s all ease;
+}
+
+.nav ul li a:hover {
+    background-color: green;
+    color: #fff;
+}
+
+.nav ul li:hover {
+    background-color: green;
+    color: #fff;
+}
+
+.nav ul li.dropdown ul {
+    background-color: green;
+    position: absolute;
+    left: 0;
+    padding-left: 0;
+    min-width: 180px;
+    display: none;
+}
+
+.nav ul li.dropdown ul li a {
+    color: #fff;
+    background-color: darkgreen;
+    width: 180px;
+}
+
+.nav ul li.dropdown:hover ul {
+    display: block;
+}
+
+.nav ul li.dropdown ul a:hover{
+    background-color: green;
+}
+
+.nav .ll {
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 789px;
+}
+
+.nav input {
+    height: 25px;
+   
+    width: 145px;
+    border: 2px solid darkgreen;
+    border-radius: 5px;
+    transition: .8s all ease;
+
+}
+
+.nav input:hover {
+    width: 180px;
+}
+
+.nav i {
+    cursor: pointer;
+
+}
+
+.fs h2 {
+    position: absolute;
+    margin-top: 54px;
+    padding-left: 20px;
+    color: darkgreen;
+
+}
+
+.fs h3 {
+    position: absolute;
+    margin-top: 90px;
+    padding-left: 20px;
+    font-size: 20px;
+
+}
+
+.fs img {
+    position: absolute;
+    height: 400px;
+    width: 600px;
+    margin-top: 190px;
+    margin-left: 40px;
+    border-radius: 15px;
+}
+
+.place {
+    float: right;
+}
+
+.place1 {
+    float: right;
+    margin-right: 80px;
+}
+
+.info i {
+    color: green;
+    font-size: 50px;
+    border: 2px;
+    height: 200px;
+    width: 250px;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.info i:hover {
+    background-color: #008CBA;
+    transform: translate(-5%, -5%);
+    transition: 1s;
+}
+
+.info p {
+    color: green;
+    font-size: 25px;
+    text-align: center;
+}
+
+.info1 i {
+    color: blue;
+    font-size: 50px;
+    border: 2px;
+    height: 200px;
+    width: 250px;
+    text-align: center;
+    margin-top: 64px;
+}
+
+.info1 p {
+    color: blue;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.info1 i:hover {
+    background-color: #008CBA;
+    transform: translate(-5%, -5%);
+    transition: 1s;
+}
+
+.info2 i {
+    color: red;
+    font-size: 50px;
+    border: 2px;
+    height: 200px;
+    width: 250px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.info2 p {
+    color: red;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.info2 i:hover {
+    background-color: #008CBA;
+    transform: translate(-5%, -5%);
+    transition: 1s;
+}
+
+.info3 i {
+    color: tomato;
+    font-size: 50px;
+    border: 2px;
+    height: 200px;
+    width: 250px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.info3 p {
+    color: tomato;
+    font-size: 25px;
+    text-align: center;
+}
+
+.info3 i:hover {
+    background-color: #008CBA;
+    transform: translate(-5%, -5%);
+    transition: 1s;
+}
+
+#img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: gray;
+    padding-top: 20px;
+}
+
+#cont {
+    position: relative;
+    width: 100%;
+}
+
+#cont .img3 {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#cont .slide {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+#cont:hover .slide {
+    width: 100%;
+}
+
+#cont .satsuki .slide1 {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+#cont1 {
+    position: relative;
+    width: 100%;
+}
+
+#cont1 .img2 {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#cont1 .slide {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+#cont1:hover .slide {
+    width: 100%;
+}
+
+.slide .slide1 {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+
+}
+
+#img .img1 {
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+#img .img0 {
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.img0 img {
+    height: 300px;
+    width: 300px;
+    border: 2px;
+    border-radius: 50px;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.img1 img {
+
+    height: 300px;
+    width: 300px;
+    border: 2px;
+    border-radius: 50px;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.name h2 {
+    color: red;
+    margin-left: 54px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+}
+
+.icon i {
+    color: yellow;
+    padding: 5px;
+
+}
+
+.icon1 {
+    display: flex;
+    justify-content: center;
+}
+
+.icon1 i {
+    color: yellow;
+    padding: 5px;
+}
+
+.btn {
+    color: black;
+    background-color: tan;
+    cursor: pointer;
+    margin-left: 120px;
+}
+
+.btn:active {
+    color: black !important;
+    background-color: red !important;
+}
+
+.btn:hover {
+    background-color: cornflowerblue;
+    transition: 0.8s all;
+}
+
+#footer {
+    display: flex;
+    background-color: darkslategray;
+    color: #fff;
+
+    justify-content: space-between;
+}
+
+.footer1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer1 h1 {
+    display: inline-flex;
+}
+
+.footer1 img {
+    height: 40px;
+}
+
+.foot ul {
+    list-style: none;
+}
+
+.foot ul h3 {
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.foot li {
+    padding-left: 10px;
+}
+
+.foot a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.foot1 {
+    float: right;
+
+}
+
+.foot1 h4{
+    display: inline;
+    padding-left: 5px;
+}
+
+.foot1 a {
+    padding-top: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    transition: .9s all ease;
+}
+
+#footer .foot li:hover {
+    background-color: #008CBA;
+    border-radius: 5px;
+
+}
+
+.fa-brands:hover{
+    color: #14a9ce
+}

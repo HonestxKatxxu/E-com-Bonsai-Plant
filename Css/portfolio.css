@@ -1,0 +1,226 @@
+/* for some good fontstyle i have used google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.all {
+       font-family: 'Prompt', sans-serif;
+}
+
+.nav {
+    position: sticky;
+    background-color: rgb(201, 131, 131);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav ul {
+    justify-content: center;
+    display: flex;
+
+}
+
+.nav ul li{
+    font-size: 30px;
+    padding: 15px 58px;
+}
+
+.fa-house{
+    opacity: 22%;
+    padding-right: 3px;
+}
+
+.fa-solid {
+    font-size: 18px;
+    padding-right: 3px;
+}
+
+
+.nav ul li a {
+    transition: 0.3s;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(100, 2, 2);
+}
+
+
+.nav ul li a:hover {
+    color: #226b22;
+}
+
+
+.body {
+    background: url(https://c4.wallpaperflare.com/wallpaper/442/976/931/smooth-heart-background-white-hearts-illustration-wallpaper-thumb.jpg);
+    background-size: cover;
+}
+
+.info {
+    padding-left: 15%;
+    display: flex;
+}
+
+.yourinfo {
+    padding-left: 40px;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.yourimg img {
+    height: 35vh;
+    border-radius: 60%;
+}
+
+.hello {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #1abcd8 10%,
+            #44107a 30%,
+            #FF0000 66%,
+            #00FF00 100%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s linear infinite;
+    font-size: 55px;
+    font-weight: bolder;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.name {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.others {
+   background-size: cover;
+    border: 1px #129c8a solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.introduction {
+    border-radius: 10px;
+    width: 32%;
+    padding: 0px 8px;
+    transition: 0.3s;
+}
+
+.introduction p {
+    text-align: justify;
+}
+
+.introduction:hover {
+    background: linear-gradient(#2a71b4, #1abcd8);
+}
+
+.edu {
+    border-radius: 10px;
+    width: 25%;
+    padding: 6px 10px;
+    line-height: 4ch;
+}
+
+.edu:hover {
+    background: linear-gradient(#2a71b4, #1abcd8);
+}
+
+li {
+    list-style: none;
+}
+
+.hobbies {
+    border-radius: 10px;
+    width: 12%;
+    padding: 6px 3px;
+    line-height: 4ch;
+}
+
+.hobbies:hover{
+    background: linear-gradient(#2a71b4, #1abcd8);
+}
+
+.skill {
+    border-radius: 10px;
+    width: 18%;
+    padding: 6px 0px;
+    line-height: 4ch;
+}
+
+.skill:hover{
+    background: linear-gradient(#2a71b4, #1abcd8);
+}
+
+.checked {
+    color: #dd9104;
+}
+
+.logos {
+    padding-left: 30px;
+}
+
+.mid {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0px;
+}
+
+tr td:first-child {
+    padding-right: 15px;
+}
+
+.address {
+    font-size: 18px;
+}
+
+tr td {
+    color: rgb(34, 163, 77);
+    padding-top: 5px;
+}
+
+.fb {
+    align-items: center;
+    font-size: 35px;
+    display: flex;
+}
+
+.fb a {
+    color: black;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.fb a:hover {
+    color: #3434c9;
+}
+
+.foot {
+    display: flex;
+    background-color: rgb(123, 211, 23);
+}
+
+.down {
+    display: flex;
+    padding-left: 30px;
+}
+
+.down p a {
+    padding: 10px 5px;
+    color: purple;
+    text-decoration: none;
+}
+
+.down p a:hover {
+    color: #2945e6;
+}

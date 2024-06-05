@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans Ms", Arial, Helvetica, sans-serif;
+
+}
+
+
+/* top css */
+
+#container {
+    font-family: "Comic Sans Ms", Arial, Helvetica, sans-serif;
+    background-image: url(../Images/Home/back.png);
+    background-size: cover;
+}
+
+
+#main {
+    display: flex;
+    justify-content: center;
+}
+
+#main h1 {
+    font-family: "Hansel Rough", Arial, Helvetica, sans-serif;
+    display: inline;
+    font-size: 45px;
+    animation: 4s clr;
+    animation-iteration-count: infinite;
+    transition: 0.9s all;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes clr {
+    0% {
+        color: black;
+    }
+
+    25% {
+        color: cyan;
+    }
+
+    50% {
+        color: mediumseagreen;
+    }
+
+    75% {
+        color: gray;
+    }
+
+    100% {
+        color: sandybrown;
+    }
+
+}
+
+.nav {
+    display: flex;
+    background-color: darkgreen;
+    justify-content: space-evenly;
+}
+
+.nav ul {
+    position: sticky;
+    display: inline-block;
+    width: 100%;
+    background-color: darkgreen;
+}
+
+.nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.nav ul li a {
+    display: inline-block;
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+    transition: .4s all ease;
+}
+
+.nav ul li a:hover {
+    background-color: green;
+    color: #fff;
+}
+
+.nav ul li:hover {  
+    background-color: green;
+    color: #fff;
+}
+.nav .ll {
+    position: absolute;
+    margin-top: 13px;
+}
+
+.nav input {
+    margin-left: 776px;
+    height: 25px;
+    width: 145px;
+    border: 2px solid darkgreen;
+    border-radius: 5px;
+    transition: .8s all ease;
+
+}
+
+.nav input:hover {
+    width: 180px;
+}
+
+.nav i {
+    cursor: pointer;
+
+}
+
+
+/* Middle body css */
+
+.full {
+    background: url(../Images/AboutUs/full.jpg);
+    background-blend-mode: difference;
+    background-size: cover;
+    /* background-color: lightblue; */
+    font-size: 15px;
+}
+
+.whole {
+    overflow: hidden;
+    width: 85%;
+    margin: 0px auto;
+}
+
+.top {
+    background-image: linear-gradient(-225deg,
+            #a2a75c 0%,
+            #732bc0 30%,
+            #77356e 66%,
+            #489648 100%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 5s linear infinite;
+}
+
+.whole p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.mid {
+    border-radius: 15px;
+    background: #ffffff;
+    display: flex;
+}
+
+.layerimg {
+    background-blend-mode: difference;
+    background: url(../Images/AboutUs/whitebg.jpg);
+    background-size: cover;
+}
+
+.left {
+    flex-basis: 55%;
+    padding: 20px 50px;
+}
+
+.left h2 {
+    margin-bottom: 25px;
+    color: #291dd4;
+    font-size: 30px;
+}
+
+.right {
+    border-radius: 15px;
+    flex-basis: 45%;
+    background: #28178a;
+
+}
+
+.namerow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.inputm{
+    font-size: 15px;
+    color: #77356e;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid rgb(16, 41, 143);
+    outline: none;
+}
+
+.namerow input {
+    width: 110%;
+    height: 25px;
+}
+
+.email {
+    text-align: center;
+    padding: 8px;
+}
+
+.email input {
+    width: 46%;
+    height: 28px;
+}
+
+textarea {
+    font-size: 18px;
+    padding: 8px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #9888d3;
+    box-sizing: border-box;
+}
+
+label {
+    font-size: 20px;
+    display: block;
+    color: #231b7a;
+    padding: 2px;
+}
+
+.btn {
+    text-align: center;
+}
+
+button {
+    background-image: linear-gradient(-225deg,
+            #00d9ff 10%,
+            #7a00fc 30%,
+            #FF0000 66%,
+            #00FF00 100%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s linear infinite;
+    border-radius: 25px;
+    margin-top: 10px;
+    box-shadow: 0px 10px 10px 0px rgb(159, 159, 252);
+    font-weight: bold;
+    font-size: 35px;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+    height: 45px;
+
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+button:hover {
+    box-shadow: 0px 10px 10px 0px #0386ad;
+}
+
+button:active {
+    transform: translatey(1px);
+}
+
+.right h4 {
+    color: #fff;
+    padding: 10px 4%;
+    font-size: 30px;
+}
+
+tr td:first-child {
+    padding-right: 15px;
+}
+
+.fa-solid {
+    font-size: 16px;
+    padding-right: 3px;
+}
+
+tr td {
+    color: #fff;
+    padding-top: 10px;
+}
+
+iframe {
+    padding: 10px 25px;
+}
+
+.teams {
+    display: flex;
+    padding: 8px 0px;
+    justify-content: space-evenly;
+}
+
+.team {
+    transition: 0.8s;
+    background: #155515;
+    border: 1px solid #b9203d;
+    padding: 29px;
+    border-radius: 20px;
+    animation: 2s ease-out;
+}
+
+.team:hover {
+    background: linear-gradient(#8686e4, #9292e9);
+}
+
+.teams img {
+    width: 152px;
+    height: 154px;
+    border-radius: 88px;
+}
+
+.bottombody {
+    font-family: 'poppins', sans-serif;
+}
+
+.imgteam {
+    background: #201e1e url(../Images/AboutUs/bg.jpg);
+    background-size: cover;
+    background-blend-mode: difference;
+}
+
+.headteam {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    padding-top: 15px;
+    color: #eb0076;
+}
+
+.a a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.a i:hover {
+    color: #aa0b0b;
+}
+
+.teams ul {
+    justify-content: center;
+    list-style: none;
+    display: flex;
+}
+
+.teams ul li {
+    padding: 2px 10px;
+}
+
+.text {
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.a i{
+    font-size: 25px;
+}
+
+.portfolio {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.portfolio a {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+    transition: 0.3s;
+}
+
+.text h3 {
+    padding: 5px 0px;
+}
+
+.portfolio a:hover {
+    color: #f5deb3;
+}
+
+
+
+/* footer css */
+
+#footer {
+    font-family: "Comic Sans Ms", Arial, Helvetica, sans-serif;
+    display: flex;
+    background-color: darkslategray;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.footer1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer1 h1 {
+    display: inline-flex;
+}
+
+.footer1 img {
+    height: 40px;
+}
+
+.foot ul {
+    margin-bottom: 6px;
+    list-style: none;
+}
+
+.foot ul h3 {
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.foot li {
+    padding-left: 10px;
+}
+
+.foot a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.foot1 {
+    float: right;
+
+}
+
+.foot1 h4{
+    font-family: "Comic Sans Ms", Arial, Helvetica, sans-serif;
+    display: inline;
+    padding-left: 5px;
+}
+
+.fa-brands:hover{
+    color: #14a9ce
+}
+
+.foot1 h3{
+    padding-top: 2px;
+    text-align: left;
+}
+
+.foot1 a {
+    padding-top: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    transition: .9s all ease;
+}
+
+#footer .foot li:hover {
+    background-color: #008CBA;
+    border-radius: 5px;
+
+}
+
